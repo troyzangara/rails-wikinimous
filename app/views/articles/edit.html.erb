@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>Editing article</h1>
+
+  <%= render "form", article: @article %>
+  <%= link_to 'Show', @article %> |
+  <%= link_to 'Back', articles_path %>
+</div>
+
+<%# render "form": This tells Rails to leave the current page and go find the file named _form.html.erb. It copies all the code from that file and pastes it right there. %>
+<%# article:: This is like a nickname. You are telling the form: "Inside your file, I want you to use the name 'article' for the data I'm about to give you." %>
+<%# @article: This is the actual data (the "real" article) that you fetched or created in your Controller. %>
